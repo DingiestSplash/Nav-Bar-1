@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messing Around With Nav Bars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- Left Side: Business Icon Placeholder -->
+            <div class="nav-left">
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h18v18H3V3z"></path>
+                </svg>
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="nav-center">
+                <a href="#" class="logo">MyLogo</a>
+            </div>
+
+            <!-- Right Side: Menu Button -->
+            <div class="nav-right">
+                <button id="menu-btn" class="menu-btn">
+                    <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="menu" class="menu hidden">
+        <div class="container menu-links">
+            <a href="#home" class="menu-link">Home</a>
+            <a href="#about" class="menu-link">About</a>
+            <a href="#" class="menu-link">Services</a>
+            <a href="#" class="menu-link">Contact</a>
+        </div>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

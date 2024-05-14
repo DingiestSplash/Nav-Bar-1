@@ -1,0 +1,91 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2d3748;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+}
+
+/* Menu Button Styles */
+.menu-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Mobile Menu Styles */
+.menu {
+    background-color: #2d3748;
+    position: fixed;
+    width: 100%;
+    top: 3.5rem; /* Adjust the top position to align with the navbar height */
+    z-index: 10;
+    padding-top: 0; /* Remove padding to eliminate white space */
+}
+
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu-link {
+    color: #a0aec0;
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
